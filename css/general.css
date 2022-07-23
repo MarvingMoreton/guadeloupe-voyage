@@ -1,0 +1,124 @@
+/**************************/
+/*  SYSTEMS  */
+/**************************/
+
+/*
+---- 01 TYPOGRAPHY SYSTEM
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+__Font weights:
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+__Line heights:
+default: 1
+Small: 1.05
+Paragraph default: 1.6
+
+__Letter spacing
+0.5px
+0.75px
+
+
+---- 02 COLORS
+
+_Primary:
+Blue highlight: #00C3AB
+Blue dark (title): #257A70
+
+_Tints:
+
+_Shades:
+
+_Accents:
+
+_Greys:
+Dark grey : #5A5A5A
+mid grey:  #515151
+Light grey (form): #999999
+
+
+--- 03 SHADOWS
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+
+--- 04 BORDER-RADIUS
+
+8px (defualt) / 12px / 14px / 16px / 18px / 20px / 24px / 50%
+
+
+--- 05 WHITESPACE
+
+_Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  /* 10px/16 px = 0.626= 62.5%; do not set a fix font-size, use % instead. *Percentage of user's browser font-size setting */
+}
+
+body {
+  font-family: 'lora', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  box-sizing: border-box;
+
+}
+
+h1 {
+  font-family: 'Poppins';
+  font-style: bold;
+  font-weight: 700;
+  font-size: 4.8rem;
+  color: #ffff;
+}
+
+h2 {
+  font-family: 'Poppins';
+  font-style: bold;
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #257A70;
+
+}
+
+h3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #257A70;
+
+}
+
+/**************************/
+/*  GENERAL REUSABLE COMPONENTS  */
+/**************************/
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
